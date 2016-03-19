@@ -26,5 +26,5 @@ const cli = meow(`
 main(cli)
   .catch(e => {
     console.log(e.stack)
-    process.exitCode = 1
+    process.exit(1)
   })
