@@ -13,9 +13,14 @@ module.exports = co.wrap(function* (cli) {
   // get package.json in cwd
   const localPkg = yield readPkg()
   // install the plugins globally
-  npmin(plugins.map(name => `tooling-plugin-${name}`), {
+  const installResult = yield npmin(plugins.map(name => `tooling-plugin-${name}`), {
     global: true
   })
+  for (const key in installResult) {
+    if (installResult[key] !== 0) {
+      throw new Error('Error occurs when installing plugins.')
+    }
+  }
   // run runner
   const runnerName = `tooling-plugin-${plugins[0]}`
   const runnerPath = yield globalNodeModules(runnerName)
