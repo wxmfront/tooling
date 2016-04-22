@@ -14,6 +14,8 @@
 	<a href="https://david-dm.org/egoist/tooling"><img src="https://img.shields.io/david/egoist/tooling.svg" alt="David"></a>
 </p>
 
+**Notice: If you only wanna build Vue.js apps, try [vbuild](https://github.com/egoist/vbuild) now, it's a successor of tooling for Vue folks.**
+
 ## Purpose
 
 You always need to configure webpack for each of your projects, drop `webpack.config.dev.js` `webpack.config.prod.js` for development and production envs. Install tons of common modules like loaders and frameworks. Tooling is just an apporach to skip that verbose procedure.
