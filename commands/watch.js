@@ -9,7 +9,7 @@ module.exports = function watch(options) {
   server({
     config,
     port: options.port,
-    customIndex: cwd('build')
+    customIndex: options.disableHtml ? false : cwd('build')
   }).then(port => {
       if (!options.silent) {
         opn(`http://localhost:${port}`)
