@@ -14,7 +14,8 @@
 	<a href="https://david-dm.org/egoist/tooling"><img src="https://img.shields.io/david/egoist/tooling.svg" alt="David"></a>
 </p>
 
-**Notice: If you only wanna build Vue.js apps, try [vbuild](https://github.com/egoist/vbuild) now, it's a successor of tooling for Vue folks.**
+**Deprecated Notice: You can use [nwb](https://github.com/insin/nwb) to build React/NPM module.**
+**Or use [vbuild](https://github.com/egoist/vbuild) to build Vue apps.**
 
 ## Purpose
 
